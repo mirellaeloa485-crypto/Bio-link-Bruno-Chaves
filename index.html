@@ -35,7 +35,7 @@ em{font-style:normal;font-weight:inherit}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
 .ico{width:18px;height:18px;flex-shrink:0}
 
-.page{position:relative;max-width:440px;margin:0 auto;background:var(--ink);min-height:100vh;overflow:hidden;box-shadow:0 0 80px rgba(0,0,0,.55)}
+.page{position:relative;max-width:440px;margin:0 auto;background:var(--ink);min-height:100vh;overflow:hidden;overflow:clip;box-shadow:0 0 80px rgba(0,0,0,.55)}
 .page::before{content:"";position:absolute;left:0;right:0;top:62%;height:900px;background:var(--estampa) repeat;background-size:200px auto;opacity:.05;filter:blur(1.2px);pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent,#000 30%,#000 60%,transparent);mask-image:linear-gradient(180deg,transparent,#000 30%,#000 60%,transparent)}
 
 /* Entradas suaves */
@@ -44,7 +44,7 @@ em{font-style:normal;font-weight:inherit}
 @keyframes up{to{opacity:1;transform:none}}
 
 /* Topo */
-.hero{position:relative;height:min(78vh,640px);min-height:520px;display:flex;flex-direction:column;justify-content:flex-end;text-align:center;padding:0 26px 14px}
+.hero{position:relative;overflow:hidden;overflow:clip;height:min(78vh,640px);min-height:520px;display:flex;flex-direction:column;justify-content:flex-end;text-align:center;padding:0 26px 14px}
 .hero-photo{position:absolute;inset:0;background:var(--photo-a) 47.5% 6%/125% auto no-repeat,var(--ink);animation:zoom 2.4s var(--ease) both}
 @keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
 .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 55% 38% at 100% 0%,var(--ink) 0%,rgba(3,17,40,.85) 45%,transparent 100%),radial-gradient(ellipse 45% 30% at 0% 0%,rgba(3,17,40,.7),transparent 100%)}
@@ -203,7 +203,7 @@ details[open] .areas{animation:up .7s var(--ease) both}
   </nav>
 
   <div class="facts">
-    <div><strong>Seg. a sex.</strong><span>das 9h às 18h</span></div>
+    <div><strong>Seg. a sex.</strong><span>08h às 12h<br>13h30 às 17h30</span></div>
     <i aria-hidden="true"></i>
     <div><strong>Presencial</strong><span>e online</span></div>
   </div>
@@ -219,9 +219,8 @@ details[open] .areas{animation:up .7s var(--ease) both}
     <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
     <div>
       <small>Escritório</small>
-      <b>Rua 23 de Março, 08 – Centro, Viradouro/SP</b>
-      <span>Em breve, novo endereço.</span>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+23+de+Mar%C3%A7o+08+Centro+Viradouro+SP" target="_blank" rel="noopener noreferrer">Como chegar <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <b>Rua Tiradentes, n. 171 – Centro, Viradouro/SP</b>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Tiradentes+171+Centro+Viradouro+SP" target="_blank" rel="noopener noreferrer">Como chegar <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 
@@ -234,7 +233,7 @@ details[open] .areas{animation:up .7s var(--ease) both}
 
   <footer class="foot">
     <div class="socials">
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+23+de+Mar%C3%A7o+08+Centro+Viradouro+SP" target="_blank" rel="noopener noreferrer" aria-label="Endereço no mapa"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Tiradentes+171+Centro+Viradouro+SP" target="_blank" rel="noopener noreferrer" aria-label="Endereço no mapa"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></a>
       <a href="https://wa.me/5517991762900" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
       <a href="mailto:bruno.chaves@adv.oabsp.org.br" aria-label="E-mail"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
     </div>
