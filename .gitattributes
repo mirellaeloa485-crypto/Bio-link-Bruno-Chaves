@@ -1,0 +1,11 @@
+# Mantém os HTML exatamente como foram gerados (a proteção CSP usa o hash do script)
+*.html text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Arquivos binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.pdf binary
