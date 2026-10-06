@@ -2,8 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/bio", "destination": "/link-na-bio" }
+  "redirects": [
+    { "source": "/bio", "destination": "/", "permanent": false },
+    { "source": "/link-na-bio", "destination": "/", "permanent": false }
   ],
   "headers": [
     {
