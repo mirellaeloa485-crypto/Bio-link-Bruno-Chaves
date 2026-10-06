@@ -1,0 +1,12 @@
+# Arquivos que ficam no repositório, mas NÃO vão para o ar na Vercel.
+# As imagens e o logotipo já estão embutidos nos HTML; publicá-los só
+# deixaria os originais acessíveis por URL.
+APRESENTAÇÃO.pdf
+LINK DA BIO/
+estampa/
+foto fundo/
+fotos do bruno/
+logotipo/
+paleta de cores da marca/
+.gitattributes
+.gitignore
